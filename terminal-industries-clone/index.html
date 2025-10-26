@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Different Kind of Logistics Technology Company | The Yard Reinvented</title>
+    
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/entry.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+    
+    <!-- Meta tags -->
+    <meta name="description" content="Rethink your YMS. Terminal is the new standard in logistics, rethinking the yard of the future. Our vision as a modern, seamless connection from gate to dock.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Different Kind of Logistics Technology Company | The Yard Reinvented">
+    <meta property="og:description" content="Rethink your YMS. Terminal is the new standard in logistics, rethinking the yard of the future. Our vision as a modern, seamless connection from gate to dock.">
+    <meta property="og:url" content="https://terminal-industries.com/about">
+    <meta property="og:site_name" content="Terminal Industries">
+    
+    <!-- Inline styles from original -->
+    <style>
+        :root {
+            --c-white: #ffffff;
+            --c-dark-green: #1a4d3a;
+            --c-lime: #abff02;
+            --c-light-gray: #6b7280;
+            --c-light-light-gray: #a2a6b4;
+            --c-dark-green-05: rgba(26, 77, 58, 0.05);
+            --font-primary: 'Suisse Intl', sans-serif;
+            --font-mono: 'Courier New', monospace;
+            --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--c-dark-green);
+            color: var(--c-white);
+            line-height: 1.5;
+        }
+        
+        .site-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .site-header {
+            position: fixed;
+            top: 25px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            color: var(--c-white);
+        }
+        
+        .inner {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(30px);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 26px;
+        }
+        
+        .logo {
+            width: 96px;
+            height: auto;
+            color: var(--c-white);
+        }
+        
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: 27px;
+            align-items: center;
+        }
+        
+        .nav a {
+            color: currentColor;
+            text-decoration: none;
+            padding: 1em 0;
+            position: relative;
+            transition: color 0.3s var(--ease-out);
+        }
+        
+        .nav a:hover {
+            color: var(--c-lime);
+        }
+        
+        main {
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .hero-title {
+            font-size: clamp(2rem, 8vw, 6rem);
+            font-weight: 400;
+            line-height: 0.95;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 4vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+            color: var(--c-light-light-gray);
+        }
+        
+        .content-section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-section h2 {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: var(--c-lime);
+        }
+        
+        .content-section p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: var(--c-light-light-gray);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--c-lime);
+        }
+        
+        .feature p {
+            color: var(--c-light-light-gray);
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background-color: var(--c-dark-green);
+            padding: 80px 20px 40px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-title {
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--c-light-light-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--c-lime);
+        }
+        
+        @media (max-width: 768px) {
+            .nav ul {
+                gap: 15px;
+            }
+            
+            .hero-section {
+                padding: 60px 20px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="__nuxt">
+        <div id="app">
+            <header class="site-header">
+                <div class="site-container">
+                    <div class="inner">
+                        <a href="/" class="logo-link" aria-label="Go to homepage">
+                            <svg viewBox="0 0 215 49" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+                                <path d="M9.16512 0C8.26239 0 7.39524 0.369725 6.75488 1.02245L1.00056 6.92436C0.360201 7.58165 0 8.47629 0 9.40289V48.0871C0 48.5892 0.400223 49 0.889385 49H34.3481C35.2508 49 36.1179 48.6303 36.7583 47.973L46.7416 37.7211C47.382 37.0684 47.7422 36.1737 47.7422 35.2471V0.912902C47.7422 0.410806 47.342 0 46.8528 0H9.16512ZM40.9206 16.0123C40.9206 16.8339 40.2714 17.5003 39.4709 17.5003H22.1324C21.3586 17.5003 20.6604 18.1531 20.6827 18.9473C20.696 19.2942 20.8339 19.6137 21.0518 19.8556C21.074 19.8784 21.0918 19.9013 21.1185 19.9241L28.5626 27.5696C28.8339 27.8481 28.9895 28.2269 28.9895 28.6195V40.5191C28.9895 41.3408 28.3403 42.0072 27.5398 42.0072H20.2068C19.4064 42.0072 18.7571 41.3408 18.7571 40.5191V18.9929C18.7571 18.1713 18.1079 17.5049 17.3074 17.5049H8.27128C7.47084 17.5049 6.82159 16.8385 6.82159 16.0169V8.48999C6.82159 7.66838 7.47084 7.00196 8.27128 7.00196H18.1568C18.5437 7.00196 18.9128 7.15715 19.184 7.44015L26.6149 15.0674C26.6415 15.0994 26.6771 15.1359 26.7082 15.1633C26.9306 15.3733 27.2241 15.5056 27.5487 15.5285C28.3403 15.5741 28.9895 14.8529 28.9895 14.0404V8.49455C28.9895 7.67294 29.6388 7.00652 30.4392 7.00652H39.4754C40.2758 7.00652 40.9251 7.67294 40.9251 8.49455V16.0214L40.9206 16.0123Z" fill="currentColor"></path>
+                                <path d="M57.9746 14.2048V9.35724H81.988V14.2048H72.8718V39.6473H67.0508V14.2048H57.9746Z" fill="currentColor"></path>
+                                <path d="M89.3921 35.7173C91.0997 35.7173 92.8518 35.0919 93.9902 33.1292H99.7712C98.5928 36.4704 95.3777 40.1905 89.4321 40.1905C82.3927 40.1905 77.4834 35.4465 77.4834 27.9136C77.4834 20.3807 82.3927 15.6367 89.4321 15.6367C95.3777 15.6367 98.5928 19.3568 99.7712 22.698H93.9902C92.8518 20.7353 91.0997 20.1099 89.3921 20.1099C85.6081 20.1099 83.3044 22.9688 83.3044 27.9136C83.3044 32.8584 85.6081 35.7173 89.3921 35.7173Z" fill="currentColor"></path>
+                                <path d="M108.132 16.1806V21.1254H115.465C116.603 21.1254 117.523 22.0685 117.523 23.2338V39.6473H111.702V26.5946H108.132V39.6473H102.311V16.1806H108.132Z" fill="currentColor"></path>
+                                <path d="M126.372 16.1806V39.6473H120.551V16.1806H126.372ZM133.705 16.1806V39.6473H127.884V16.1806H133.705Z" fill="currentColor"></path>
+                                <path d="M142.821 16.1806V39.6473H137V16.1806H142.821ZM150.154 16.1806V39.6473H144.333V16.1806H150.154Z" fill="currentColor"></path>
+                                <path d="M159.27 16.1806V39.6473H153.449V16.1806H159.27ZM166.603 16.1806V39.6473H160.782V16.1806H166.603Z" fill="currentColor"></path>
+                                <path d="M175.719 16.1806V39.6473H169.898V16.1806H175.719ZM183.052 16.1806V39.6473H177.231V16.1806H183.052Z" fill="currentColor"></path>
+                                <path d="M192.168 16.1806V39.6473H186.347V16.1806H192.168ZM199.501 16.1806V39.6473H193.68V16.1806H199.501Z" fill="currentColor"></path>
+                                <path d="M208.617 16.1806V39.6473H202.796V16.1806H208.617Z" fill="currentColor"></path>
+                            </svg>
+                        </a>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/solutions">Solutions</a></li>
+                                <li><a href="/resources">Resources</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <section class="hero-section">
+                    <h1 class="hero-title">A Different Kind of Logistics Technology Company</h1>
+                    <p class="hero-subtitle">The Yard Reinvented</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Rethink Your YMS</h2>
+                    <p>Terminal is the new standard in logistics, rethinking the yard of the future. Our vision as a modern, seamless connection from gate to dock.</p>
+                    <p>We're building technology that transforms how logistics operations work, creating efficiency and visibility across the entire supply chain.</p>
+                </section>
+
+                <section class="features-grid">
+                    <div class="feature">
+                        <h3>Modern Technology</h3>
+                        <p>Built with cutting-edge technology to handle the complexities of modern logistics operations.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Seamless Integration</h3>
+                        <p>Connect your entire operation from gate to dock with our comprehensive platform.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Real-time Visibility</h3>
+                        <p>Get complete visibility into your yard operations with real-time tracking and analytics.</p>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <h2 class="footer-title">Ready to Transform Your Yard?</h2>
+                <div class="footer-links">
+                    <a href="/contact">Contact Us</a>
+                    <a href="/solutions">Our Solutions</a>
+                    <a href="/resources">Resources</a>
+                    <a href="/about">About Terminal</a>
+                </div>
+                <p>&copy; 2025 Terminal Industries. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Local JavaScript -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
